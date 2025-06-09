@@ -1,0 +1,13 @@
+.link {
+  align-items: center;
+  color: #5DA2E5;
+  display: flex;
+  font-size: 18px;
+  gap: 8px;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+
+  &:hover {
+    color: #1565c0;
+  }
+}
