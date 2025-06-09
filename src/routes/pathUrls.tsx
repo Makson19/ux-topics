@@ -1,3 +1,5 @@
+import Template from '../components/template/Template'
+import ErrorPage from '../pages/ErrorPage'
 import HeuristicaPage from '../pages/HeuristicaPage'
 import HomePage from '../pages/HomePage'
 import PersonaPage from '../pages/PersonaPage'
@@ -6,19 +8,26 @@ import UsabilidadePage from '../pages/UsabilidadePage'
 export const routes = [
   {
     path: '/',
-    index: true,
-    element: <HomePage />
-  },
-  {
-    path: '/usabilidade',
-    element: <UsabilidadePage />
-  },
-  {
-    path: '/heuristica',
-    element: <HeuristicaPage />
-  },
-  {
-    path: '/persona',
-    element: <PersonaPage />
+    element: <Template />,
+    errorElement: <ErrorPage />,
+    children: [
+      {
+        path: '/',
+        index: true,
+        element: <HomePage />
+      },
+      {
+        path: '/usabilidade',
+        element: <UsabilidadePage />
+      },
+      {
+        path: '/heuristica',
+        element: <HeuristicaPage />
+      },
+      {
+        path: '/persona',
+        element: <PersonaPage />
+      }
+    ]
   }
 ]
