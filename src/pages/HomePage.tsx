@@ -8,6 +8,7 @@ const HomePage = () => {
   const handleGoToUsabPage = () => navigate('/usabilidade')
   const handleGoToHeuristicaPage = () => navigate('/heuristica')
   const handleGoToPersonaPage = () => navigate('/persona')
+  const handleGoToDesignPage = () => navigate('/design-thinking')
 
   return (
     <div className='container'>
@@ -27,6 +28,12 @@ const HomePage = () => {
         onClick={handleGoToPersonaPage}
       >
         Persona
+      </Button>
+
+      <Button
+        onClick={handleGoToDesignPage}
+      >
+        Design Thinking
       </Button>
     </div>
   )

@@ -1,4 +1,5 @@
 import Template from '../components/template/Template'
+import DesignThinkingPage from '../pages/DesignThinkingPage'
 import ErrorPage from '../pages/ErrorPage'
 import HeuristicaPage from '../pages/HeuristicaPage'
 import HomePage from '../pages/HomePage'
@@ -27,6 +28,10 @@ export const routes = [
       {
         path: '/persona',
         element: <PersonaPage />
+      },
+      {
+        path: '/design-thinking',
+        element: <DesignThinkingPage />
       }
     ]
   }

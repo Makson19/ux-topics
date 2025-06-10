@@ -88,6 +88,7 @@ const UsabilidadePage = () => {
       </div>
 
       <div className='content'>
+        <Title>Interface</Title>
         <p>
           É uma entrada composta por vários elementos. É a ligação do homem com o software.
         </p>
